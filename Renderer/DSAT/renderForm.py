@@ -31,7 +31,7 @@ def renderSection(type, questions, standalone):
 
         output += renderQuestion(
             question=question,
-            questionNo=question["sequence"],
+            questionNo=question["displayNumber"],
             standalone=False,
             showPassage=True
         )
