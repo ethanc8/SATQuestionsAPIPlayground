@@ -20,6 +20,11 @@ def renderQuestion(question, questionNo, standalone, showPassage=True):
 <html>
     <head>
         <title>Question {question["item_id"]}</title>
+        <style>
+            .sr-only {{
+                display: none;
+            }}
+        </style>
     </head>
     <body>
 """ if standalone else ""

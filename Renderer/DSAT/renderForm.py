@@ -7,6 +7,11 @@ def renderSection(type, questions, standalone):
 <html>
     <head>
         <title>{type}</title>
+        <style>
+            .sr-only {{
+                display: none;
+            }}
+        </style>
     </head>
     <body>
 """ if standalone else ""
@@ -40,6 +45,11 @@ def renderForm(form, standalone):
 <html>
     <head>
         <title>Test Form</title>
+        <style>
+            .sr-only {{
+                display: none;
+            }}
+        </style>
     </head>
     <body>
         <h1>Test Form</h1>

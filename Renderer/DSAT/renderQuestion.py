@@ -20,6 +20,11 @@ def renderQuestion(question, questionNo, standalone, showPassage=True, metadata=
 <html>
     <head>
         <title>Question {question["externalid"]}</title>
+        <style>
+            .sr-only {{
+                display: none;
+            }}
+        </style>
     </head>
     <body>
 """ if standalone else ""

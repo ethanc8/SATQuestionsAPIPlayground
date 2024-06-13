@@ -9,6 +9,11 @@ def renderBank(bank, standalone):
 <html>
     <head>
         <title>Question Bank {sys.argv[1]}</title>
+        <style>
+            .sr-only {{
+                display: none;
+            }}
+        </style>
     </head>
     <body>
 """ if standalone else ""
